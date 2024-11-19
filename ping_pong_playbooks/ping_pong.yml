@@ -1,0 +1,8 @@
+---
+- name: Ansible Ping Pong Across OS
+  hosts: linux_hosts, windows_hosts, mac_hosts
+  gather_facts: no
+
+  tasks:
+  - name: Ping all nodes to test connectivity
+    ansible.builtin.ping:
