@@ -1,0 +1,12 @@
+---
+services_to_check:
+  - name: Wazuh
+    service_name: "Wazuh"
+  - name: Osquery
+    service_name: "osqueryd"
+  - name: Sysmon
+    service_name: "Sysmon"
+  - name: Defender
+    service_name: "WinDefend"
+  - name: Invinsense Agent
+    service_name: "IvsAgent"

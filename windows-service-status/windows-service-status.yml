@@ -1,0 +1,7 @@
+---
+- name: Windows Service Status Check
+  hosts: windows_servers
+  gather_facts: no
+  become: false
+  roles:
+    - role: windows_services

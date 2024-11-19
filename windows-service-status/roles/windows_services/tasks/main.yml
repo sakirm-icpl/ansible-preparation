@@ -1,0 +1,8 @@
+---
+- name: Check Windows Service Status
+  win_service:
+    name: "{{ item.service_name }}"
+    state: started
+  loop: "{{ services_to_check }}"
+  register: service_status
+...
